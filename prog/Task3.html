@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task3</title>
+<style>
+body{
+    background-image: url('pic1.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#first{
+    width: 200px;
+    height: 100px;
+    background: green;
+    position: relative;
+}
+#first #second{
+    width: 75%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background: red;
+}
+.parent{
+    height: 100px;
+    width: 50px;
+    display: inline-block;
+    border: 3px solid blue;
+}
+.child{
+    height: 100px;
+    width: 50px;
+    display: inline-block;
+    border: 3px solid orange;
+}
+.rect{
+    border: 3px solid palevioletred;
+    height: 100px;  
+    width: 100px;
+}
+.padding{
+    padding: 10px 5px 6px 20px;
+    padding-right: 2px;
+    border: 3px solid olivedrab;
+    margin: 100px;
+    margin-left: 50px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div><label>Rectangle Box Side by Side</label></div>
+<div class="parent"></div>
+<div class="child"></div>
+
+<div><label>Rectangle Box within Box</label></div>
+<div id="first">
+    <div id="second"></div>
+</div>
+
+<div><label>Square Box</label></div>
+<div class="rect"></div>
+
+<div><label>Text Align to Centre</label></div>
+<h1 class="padding">CSS Selector</h1>
+</body>
+</html>
